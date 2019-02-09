@@ -1,7 +1,7 @@
 <script type="text/javascript">
     // FirebaseUI config.
     var uiConfig = {
-        signInSuccessUrl: 'http://localhost:63342/personalProject/web/account.php',
+        signInSuccessUrl: 'http://tracker.azuretidesgaming.com/account.php',
         signInOptions: [
             // Leave the lines as is for the providers you want to offer your users.
             firebase.auth.GoogleAuthProvider.PROVIDER_ID,
