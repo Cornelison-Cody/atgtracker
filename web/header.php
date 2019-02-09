@@ -1,6 +1,12 @@
-<!DOCTYPE html>
-<html>
+</head>
+<body>
+<header>
+    <div id="header-title">
+        <h1>Play Tracker</h1>
+    </div>
 
-<head>
-<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <div class="link-rightSide">
+        <a href="index.php">Home</a>
+        <a href="assignments.php">Assignments</a>
+    </div>
+</header>

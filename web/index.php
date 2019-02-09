@@ -1,16 +1,16 @@
+<?php include 'head.php'; ?>
+<?php include'../firebase/firebaseInit.php'; ?>
+
+<title>ATG Tracker</title>
 <?php include 'header.php'; ?>
-<?php include'../firebase/firebaseInit.php' ?>
+<div class="topMessage">
+    <h1>Welcome to Azure Tides Gaming play tracker.</h1>
+    <br>
+    <h3>Please sign in with your Google account to continue.</h3>
+</div>
+<?php include '../firebase/authUI.php'; ?>
 
-    <title>ATG Tracker</title>
-</head>
-
-<body>
-    <h1>Azure Tides Gaming Tracker</h1>
-    <?php include 'authUI.php'; ?>
 </body>
-
-
-
 </html>
 
 
