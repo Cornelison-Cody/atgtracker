@@ -5,9 +5,11 @@
     padding: 0;
     border: 0;
 }
+
 html {
     height: 100%;
 }
+
 body {
     background-color: aliceblue;
     height: 100%;
@@ -20,6 +22,7 @@ body {
     overflow: hidden;
     background-color: #002232;
     position: relative;
+    box-shadow: 0 3px 6px 0 #002232;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -30,7 +33,6 @@ body {
 .topnav h1 {
     color: aliceblue;
     padding: 14px 16px;
-    text-decoration: none;
     font-size: 35px;
     font-weight: bolder;
     display: block;
@@ -51,6 +53,7 @@ body {
     background: #002232;
     display: block;
     position: absolute;
+    width: 100px;
     right: 0;
     top: 0;
 }
