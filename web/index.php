@@ -8,7 +8,7 @@
     <br>
     <h3>Please sign in with your Google account to continue.</h3>
 </div>
-<?php include '../firebase/authUI.php'; ?>
+<?php include 'authUI.php'; ?>
 
 </body>
 </html>
