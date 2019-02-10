@@ -10,7 +10,7 @@
     foreach($db->query('SELECT * FROM games_owned INNER JOIN user_table ON games_owned.firebase_uid = user_table.firebase_uid INNER JOIN game ON games_owned.game_id = game.game_id WHERE user_table.firebase_uid =' . $_GET[uid]) as $row) {
         echo "<div class='post-container'>
                 <h3>" . $row[game_name] . "</h3>
-                <img src='media/" . $row[game_name] .".jpg'>
+                <img src='media/" . $row[game_name] .".JPG'>
                </div>";
     };
     ?>
