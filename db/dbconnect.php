@@ -20,15 +20,5 @@ catch (PDOException $ex)
     echo 'Error!: ' . $ex->getMessage();
     die();
 }
-
-foreach ($db->query('SELECT * FROM scriptures') as $row)
-{
-    echo $row['scriptures_book'];
-    echo $row['scriptures_chapter'];
-    echo $row['scriptures_verse'];
-    echo $row['scriptures_content'];
-    echo '<br/>';
-}
-
 ?>
 

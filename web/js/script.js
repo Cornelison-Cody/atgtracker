@@ -7,3 +7,7 @@ function myFunction() {
         x.style.display = "block";
     }
 }
+
+getCurrentUID = function () {
+    return firebase.auth().currentUser.uid;
+}

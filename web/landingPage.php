@@ -1,3 +1,3 @@
 <?php include 'modules/head.php'; ?>
-    <title>Add a new Play</title>
+    <title>ATG Play Tracker</title>
 <?php include 'modules/header.php'; ?>

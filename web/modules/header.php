@@ -1,6 +1,5 @@
 </head>
 <body>
-<header>
 <!--    Took this code from W3 Schools
 https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
 
@@ -9,8 +8,10 @@ https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
         <h1>Play Tracker</h1>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-            <a href="myPlays.php">View my Plays</a>
+            <a href="myPlays.php?uid=">View my Plays</a>
+            <a href="myGames.php">View my Games</a>
             <a href="addPlay.php">Add a Play</a>
+            <a href="addGame.php">Add a Game</a>
             <a href="latestPlays.php">Recent Plays</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -18,4 +19,3 @@ https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
             <i class="fa fa-bars"></i>
         </a>
     </div>
-</header>
