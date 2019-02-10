@@ -84,7 +84,7 @@ body {
 }
 
 .post-container {
-    height: 455px;
+    height: 300px;
     flex-grow: 1;
     text-align: center;
     margin: 15px 1vw;
