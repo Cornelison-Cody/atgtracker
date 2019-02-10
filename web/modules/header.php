@@ -4,6 +4,7 @@
 <script type="text/javascript">
     var currentUID;
     updateLinks = function() {
+        console.log("updating links");
         firebase.auth().onAuthStateChanged(function(user) {
             if (user) {
                 // User is signed in.
