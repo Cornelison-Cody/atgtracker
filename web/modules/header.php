@@ -8,9 +8,13 @@
         firebase.auth().onAuthStateChanged(function(user) {
             if (user) {
                 // User is signed in.
+                console.log("userSignedIn");
                 currentUID = user.uid;
+                document.getElementById("menuItems").style.display = "block";
             } else {
                 // User is signed out.
+                console.log("userSignedOut");
+                document.getElementById("menuItems").style.display = "none";
             }
         }, function(error) {
             console.log(error);
@@ -33,9 +37,10 @@
             <a href="addPlay.php">Add a Play</a>
             <a href="addGame.php">Add a Game</a>
             <a href="latestPlays.php">Recent Plays</a>
+            <a href="index.php" onclick="firebase.auth().signOut();">Sign Out</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a id="menuItems" href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
