@@ -1,18 +1,27 @@
 </head>
 <body>
-<!--    Took this code from W3 Schools
-https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
-    <script>
-        var currentUID;
-        updateLinks = function () {
-            currentUID = firebase.auth().currentUser.uid;
-        };
-        window.addEventListener('load', function() {
-            updateLinks();
+
+<script type="text/javascript">
+    var currentUID;
+    updateLinks = function() {
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+                // User is signed in.
+                currentUID = user.uid;
+            } else {
+                // User is signed out.
+            }
+        }, function(error) {
+            console.log(error);
         });
-    </script>
+    };
+    window.addEventListener('load', function() {
+        updateLinks()
+    });
+</script>
 
-
+    <!--    Took this code from W3 Schools
+    https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
     <!-- Top Navigation Menu -->
     <div class="topnav">
         <h1>Play Tracker</h1>
