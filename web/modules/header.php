@@ -1,6 +1,6 @@
 </head>
 <body>
-
+<?php include_once "../firebase/firebaseInit.php";?>
 <script type="text/javascript">
     var currentUID;
     updateLinks = function() {
