@@ -11,10 +11,16 @@
                 console.log("userSignedIn");
                 currentUID = user.uid;
                 document.getElementById("menuItems").style.display = "block";
+                document.getElementById("signInMsg").style.display = "none";
+                document.getElementById("firebaseui-auth-container").style.display = "none";
+                document.getElementById("signedInMsg").style.display = "block";
             } else {
                 // User is signed out.
                 console.log("userSignedOut");
                 document.getElementById("menuItems").style.display = "none";
+                document.getElementById("signInMsg").style.display = "block";
+                document.getElementById("firebaseui-auth-container").style.display = "block";
+                document.getElementById("signedInMsg").style.display = "none";
             }
         }, function(error) {
             console.log(error);
