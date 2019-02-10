@@ -84,7 +84,7 @@ body {
 }
 
 .post-container {
-    height: 300px;
+    min-height: 300px;
     width: 300px;
     flex-grow: 1;
     text-align: center;
@@ -104,6 +104,14 @@ body {
 .post-container > img {
     margin: 20px 0;
     border-radius: 5px;
+}
+
+.post-container > p {
+    text-align: left;
+    font-size: larger;
+    font-family: "francois one";
+    margin: 10px auto;
+    width: 250px;
 }
 
 #items {
