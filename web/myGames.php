@@ -7,7 +7,7 @@
 <div id="dataDump">
     <?php echo $_GET['uid'] ?>
     <?php
-    foreach($db->query('SELECT * FROM game') as $row) {
+    foreach($db->query('SELECT * FROM gameINNER JOIN user_table ON games_owned.firebase_uid = user_table.firebase_uid INNER JOIN game ON games_owned.game_id = game.game_id WHERE user_table.firebase_uid =' . $_GET[uid]) as $row) {
     echo $row;
     };
     ?>
