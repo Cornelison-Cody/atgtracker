@@ -20,9 +20,5 @@ catch (PDOException $ex)
     echo 'Error!: ' . $ex->getMessage();
     die();
 }
-
-foreach($db->query('SELECT * FROM game') as $row) {
-    echo $row;
-};
 ?>
 

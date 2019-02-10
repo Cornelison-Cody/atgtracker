@@ -6,12 +6,10 @@
 </script>
 <div id="dataDump">
     <?php echo $_GET['uid'] ?>
-    <?php echo $db ?>
     <?php
-        foreach ($db->query('SELECT * FROM games_owned')
-                 as $row) {
-            echo "<div>". $row. "</div>";
-        }
+    foreach($db->query('SELECT * FROM game') as $row) {
+    echo $row;
+    };
     ?>
 </div>
 
