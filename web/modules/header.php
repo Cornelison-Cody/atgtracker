@@ -27,8 +27,8 @@
         <h1>Play Tracker</h1>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-            <a href="myPlays.php" onclick="location.href=this.href+'?uid='+currentUID">View my Plays</a>
-            <a href="myGames.php" onclick="location.href=this.href+'?uid='+currentUID">View my Games</a>
+            <a href="myPlays.php" onclick="location.href=this.href+'?uid='+currentUID;return false;">View my Plays</a>
+            <a href="myGames.php" onclick="location.href=this.href+'?uid='+currentUID;return false;">View my Games</a>
             <a href="addPlay.php">Add a Play</a>
             <a href="addGame.php">Add a Game</a>
             <a href="latestPlays.php">Recent Plays</a>
