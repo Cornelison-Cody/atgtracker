@@ -1,6 +1,6 @@
 <?php include 'modules/head.php'; ?>
 <?php include_once'../db/dbconnect.php'; ?>
-    <title>My Games</title>
+    <title><?php echo $db->query('SELECT display_name FROM user_table WHERE firebase_uid =' . $_GET[uid])?>'s Games</title>
 <?php include 'modules/header.php'; ?>
 <script>
 </script>
