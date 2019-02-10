@@ -8,7 +8,7 @@ https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
             currentUID = firebase.auth().currentUser.uid;
         };
         window.addEventListener('load', function() {
-            initApp()
+            updateLinks();
         });
     </script>
 
