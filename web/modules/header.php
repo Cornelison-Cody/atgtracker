@@ -3,8 +3,16 @@
 <!--    Took this code from W3 Schools
 https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
     <script>
-        var currentUID = firebase.auth().currentUser.uid;
+        var currentUID;
+        updateLinks = function () {
+            currentUID = firebase.auth().currentUser.uid;
+        };
+        window.addEventListener('load', function() {
+            initApp()
+        });
     </script>
+
+
     <!-- Top Navigation Menu -->
     <div class="topnav">
         <h1>Play Tracker</h1>
