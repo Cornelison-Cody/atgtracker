@@ -96,6 +96,10 @@ body {
     rgba(128, 128, 128, .6));
 }
 
+.post-container > h3 {
+    margin-top: 10px;
+}
+
 .post-container > img {
     margin: 20px 0;
     border-radius: 5px;
