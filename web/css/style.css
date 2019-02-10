@@ -74,3 +74,40 @@ body {
 .firebaseui-card-footer {
     display: none;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 4%;
+    justify-content: space-evenly;
+}
+
+.post-container {
+    height: 455px;
+    flex-grow: 1;
+    text-align: center;
+    margin: 15px 1vw;
+    border: solid 2px black;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 black;
+    background-image: linear-gradient(to top, rgba(128, 128, 128, .7),
+    rgba(128, 128, 128, .6));
+}
+
+.post-container > img {
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+#items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 50%;
+    align-content: start;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
