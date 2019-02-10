@@ -21,6 +21,8 @@ catch (PDOException $ex)
     die();
 }
 
-echo $db->query('SELECT * FROM game');
+foreach($db->query('SELECT * FROM game') as $row) {
+    echo $row;
+};
 ?>
 
