@@ -13,7 +13,8 @@
                 <p>PLAYERS: " . $row[players_text] .  "</p>
                 <p>WINNER: " . $row[winner_text] .  "</p>
                 <p>Score: " . $row[score_text] .  "</p>
-                <p>Notes: " . $row[notes_text] .  "</p>             
+                <p>Notes: " . $row[notes_text] .  "</p>    
+                <p>Date: " .$row[date_played] . "</p>                 
                </div>";
     };
     ?>

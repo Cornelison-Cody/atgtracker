@@ -3,7 +3,6 @@
 
     <title>ATG Play Tracker</title>
 <?php include 'modules/header.php'; ?>
-<?php //include 'account.php'?>
 <?php include 'authUI.php'; ?>
 <div id="signedInMsg" class="topMessage">
     <h2>Sign in, Success!</h2>
