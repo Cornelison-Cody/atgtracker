@@ -15,3 +15,8 @@ function updateTitle(title) {
 function clearNotice() {
     document.getElementById("confirmationNotice").style.display = "none";
 }
+
+function showNotice() {
+    document.getElementById("confirmationNotice").style.display = "flex";
+}
+
