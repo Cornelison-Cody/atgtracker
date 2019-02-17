@@ -3,14 +3,19 @@
     <title><?php foreach($db->query('SELECT display_name FROM user_table WHERE firebase_uid =\'' . $_GET[uid] . '\'') as $row) {echo $row[display_name];}?>'s Games</title>
 <?php include 'modules/header.php'; ?>
 <script>
+    window.addEventListener('load', function() {
+        updateTitle("My Games");
+    });
 </script>
 <div class="flex-container">
     <?php
-    foreach($db->query('SELECT * FROM games_owned INNER JOIN user_table ON games_owned.firebase_uid = user_table.firebase_uid INNER JOIN game ON games_owned.game_id = game.game_id WHERE user_table.firebase_uid =\'' . $_GET[uid] . '\'') as $row) {
+    foreach($db->query('SELECT games_owned.game_id, firebase_uid, game.game_name, count(*) FROM games_owned INNER JOIN game ON games_owned.game_id = game.game_id WHERE firebase_uid =\'' . $_GET[uid] . '\' GROUP BY firebase_uid, games_owned.game_id, game.game_name') as $row) {
         echo "<div class='post-container'>
                 <h3>" . $row[game_name] . "</h3>
-                <img src='media/" . $row[game_name] .".JPG'>
-               </div>";
+                <object data='media/" . $row[game_name] .".JPG'>
+                    <img src='media/notFound.JPG'>
+                </object>
+           </div>";
     };
     ?>
 </div>

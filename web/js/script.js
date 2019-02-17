@@ -7,3 +7,15 @@ function myFunction() {
         x.style.display = "block";
     }
 }
+
+function updateTitle(title) {
+    document.getElementById("pageTitle").innerText = title;
+}
+
+function clearNotice() {
+    document.getElementById("confirmationNotice").style.display = "none";
+}
+
+function showNotice() {
+    document.getElementById("confirmationNotice").style.display = "flex";
+}

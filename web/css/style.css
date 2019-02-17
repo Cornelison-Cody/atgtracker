@@ -101,7 +101,7 @@ body {
     margin-top: 10px;
 }
 
-.post-container > img {
+.post-container > img, object, object > img {
     margin: 20px 0;
     border-radius: 5px;
 }
@@ -113,13 +113,82 @@ body {
     margin: 10px 5px;
 }
 
-#items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 50%;
-    align-content: start;
+.button {
     margin-top: 5px;
-    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: Georgia;
+    color: aliceblue;
+    border-color: #002232;
+    background-color: #002232;
+    box-shadow: 0 4px 10px 0 rgba(128, 128, 128, .9);
+}
+.button:hover {
+    box-shadow: none;
+}
+
+form {
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 black;
+    margin: 30px 10%;
+    padding: 20px 0;
+    background-image: linear-gradient(to top, rgba(128, 128, 128, .7),
+    rgba(128, 128, 128, .6));
+    text-align: center;
+}
+input {
+    border-radius: 5px;
+    width: 180px;
+    margin: 15px;
+    padding: 10px;
+    border: solid grey 1px;
+}
+
+#confirmationNotice {
+    max-width: none;
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, .1);
+    position: absolute;
+    top: 0;
+}
+
+#confirmationNotice > h1 {
+    color: #002232;
+    font-size: xx-large;
+}
+
+#confirmationNotice > h3 {
+    color: red;
+    cursor: pointer;
+}
+
+#confirmationNotice > h3:hover {
+    color: darkred;
+    text-decoration: underline;
+}
+
+.row {
+    width: 100%;
+}
+
+#closeConfirmationButton {
+    cursor: pointer;
+    font-size: 40px;
+    display: block;
+    color: red;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+
+#closeConfirmationButton:hover {
+    color: darkred;
 }

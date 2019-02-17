@@ -1,4 +1,4 @@
 <?php
-include "localDB.php";
+include "devDB.php";
 ?>
 
