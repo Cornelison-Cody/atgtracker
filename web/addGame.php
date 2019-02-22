@@ -6,7 +6,6 @@
 <script>
     window.addEventListener('load', function() {
         updateTitle("Add Game");
-        document.getElementById("firebaseUID").value = <?php echo "'" . $_GET[uid] . "'";?>;
 
         <?php
         if (isset($_POST['submit'])) {
@@ -19,8 +18,7 @@
                 $game_id = $row[game_id];
             };
 
-            $db->query('INSERT INTO games_owned (game_id, firebase_uid) VALUES (\'' . $game_id .'\', \'' . $_POST[firebase_uid] . '\')');
-//            echo 'console.log("INSERT INTO games_owned (game_id, firebase_uid) SELECT \'' . $game_id .'\', \'' . $_POST[firebase_uid] . '\'  VALUES (\'' . $game_id .'\', \'' . $_POST[firebase_uid] . '\') ")';
+            $db->query('INSERT INTO games_owned (game_id, firebase_uid) VALUES (\'' . $game_id .'\', \'' . $_SESSION['uid'] . '\')');
 
         }
         ?>
@@ -35,7 +33,6 @@
 <form action="" method="post">
     <p>*Required</p>
     <input list="gameNames" type="text" name="game" placeholder="Game Name *" required>
-    <input type="hidden" name="firebase_uid" id="firebaseUID">
     <br>
     <input class="button" type="submit" name="submit" value="Add Game">
 
