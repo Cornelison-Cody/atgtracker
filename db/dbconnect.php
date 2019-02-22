@@ -1,4 +1,4 @@
 <?php
-include "devDB.php";
+include "prodDB.php";
 ?>
 
