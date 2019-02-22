@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="869d671c-3a6f-47de-9360-a2fcfe32d2c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,20 +108,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3111">
-                  <caret line="183" column="17" selection-start-line="183" selection-start-column="17" selection-end-line="183" selection-end-column="17" />
+                <state relative-caret-position="402">
+                  <caret line="165" column="1" lean-forward="true" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/js/authUI.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
+                <state relative-caret-position="34">
+                  <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
                 </state>
               </provider>
             </entry>
@@ -140,8 +139,12 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/db/prodDB.php">
-              <provider selected="true" editor-type-id="text-editor" />
+            <entry file="file://$PROJECT_DIR$/db/dbconnect.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+                </state>
+              </provider>
             </entry>
           </file>
         </leaf>
@@ -177,9 +180,7 @@
         <option value="$PROJECT_DIR$/web/account.php" />
         <option value="$PROJECT_DIR$/web/landingPage.php" />
         <option value="$PROJECT_DIR$/db/dbconnectLocal.php" />
-        <option value="$PROJECT_DIR$/db/dbconnect.php" />
         <option value="$PROJECT_DIR$/web/scratch.php" />
-        <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/web/latestPlays.php" />
         <option value="$PROJECT_DIR$/web/js/script.js" />
         <option value="$PROJECT_DIR$/web/team.php" />
@@ -194,7 +195,6 @@
         <option value="$PROJECT_DIR$/web/modules/head.php" />
         <option value="$PROJECT_DIR$/firebase/firebaseInit.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/web/js/authUI.js" />
         <option value="$PROJECT_DIR$/web/firebaseUser.php" />
         <option value="$PROJECT_DIR$/web/addUser.php" />
         <option value="$PROJECT_DIR$/web/authUI.php" />
@@ -205,6 +205,9 @@
         <option value="$PROJECT_DIR$/web/addPlay.php" />
         <option value="$PROJECT_DIR$/web/myGames.php" />
         <option value="$PROJECT_DIR$/web/myPlays.php" />
+        <option value="$PROJECT_DIR$/db/dbconnect.php" />
+        <option value="$PROJECT_DIR$/web/js/authUI.js" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
       </list>
     </option>
   </component>
@@ -233,6 +236,11 @@
             <path>
               <item name="personalProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="personalProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -293,7 +301,7 @@
       <workItem from="1550638594930" duration="10000" />
       <workItem from="1550638869278" duration="3989000" />
       <workItem from="1550713381324" duration="2030000" />
-      <workItem from="1550715426490" duration="15033000" />
+      <workItem from="1550715426490" duration="16029000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup of Firebase Auth">
       <created>1549690008613</created>
@@ -603,20 +611,35 @@
       <option name="project" value="LOCAL" />
       <updated>1550812946962</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Broke things. Hope this fixes them.">
+      <created>1550813541655</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1550813541655</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Updated settings for production.">
+      <created>1550813874107</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1550813874107</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84298000" />
+    <option name="totallyTimeSpent" value="85294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1130064" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1130064" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="0" weight="0.32922733" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49946696" visible="true" weight="0.32827735" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" sideWeight="0.49946696" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Version Control" order="4" />
@@ -660,8 +683,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated nav bar with W3 schools menu" />
-    <MESSAGE value="Created pages for hamburger menu.&#10;Updated styling." />
     <MESSAGE value="Added additional pages, played with login and firebase data, working on myGames.php with HTTP GET for UID" />
     <MESSAGE value="Testing DBConnect" />
     <MESSAGE value="DB Connect is working. Now testing $Row data." />
@@ -685,7 +706,9 @@
     <MESSAGE value="Update script.js" />
     <MESSAGE value="Fixed not found jpg" />
     <MESSAGE value="Finilized alot of things.&#10;Added sessions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finilized alot of things.&#10;Added sessions." />
+    <MESSAGE value="Broke things. Hope this fixes them." />
+    <MESSAGE value="Updated settings for production." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated settings for production." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/firebaseInit.js" />
@@ -732,23 +755,6 @@
     <entry file="file://$PROJECT_DIR$/web/team/checkuser.php" />
     <entry file="file://$PROJECT_DIR$/web/team/myDb.sql" />
     <entry file="file://$PROJECT_DIR$/web/team/welcome.php" />
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3111">
-          <caret line="183" column="17" selection-start-line="183" selection-start-column="17" selection-end-line="183" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/dbconnect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/prodDB.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -768,23 +774,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/authUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/firebase/firebaseInit.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -884,6 +873,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="214" selection-start-line="14" selection-start-column="214" selection-end-line="14" selection-end-column="214" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/prodDB.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/dbconnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/authUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="165" column="1" lean-forward="true" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
         </state>
       </provider>
     </entry>
