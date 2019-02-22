@@ -1,2 +1,6 @@
-[InternetShortcut]
-URL=https://github.com/cornelco/atgtracker/blob/master/composer.json
+{
+  "require": {
+    "php": "^7.1.0",
+    "ext-pdo": "*"
+  }
+}

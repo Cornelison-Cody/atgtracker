@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="869d671c-3a6f-47de-9360-a2fcfe32d2c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/addUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/firebaseUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/signOut.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase/firebaseInit.php" beforeDir="false" afterPath="$PROJECT_DIR$/firebase/firebaseInit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/addGame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/addGame.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/addPlay.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/addPlay.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/authUI.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/authUI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/authUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/authUI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/modules/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/modules/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/myGames.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/myGames.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/myPlays.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/myPlays.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -226,10 +214,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="129" />
+    <option name="y" value="161" />
+    <option name="width" value="1694" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -245,27 +233,6 @@
             <path>
               <item name="personalProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="personalProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="firebase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personalProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -326,7 +293,7 @@
       <workItem from="1550638594930" duration="10000" />
       <workItem from="1550638869278" duration="3989000" />
       <workItem from="1550713381324" duration="2030000" />
-      <workItem from="1550715426490" duration="14425000" />
+      <workItem from="1550715426490" duration="15033000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup of Firebase Auth">
       <created>1549690008613</created>
@@ -629,11 +596,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550713901521</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Finilized alot of things.&#10;Added sessions.">
+      <created>1550812946962</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1550812946962</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83690000" />
+    <option name="totallyTimeSpent" value="84298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -642,9 +616,9 @@
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1130064" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="0" weight="0.32922733" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49946696" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
@@ -686,7 +660,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Auth missing" />
     <MESSAGE value="Updated nav bar with W3 schools menu" />
     <MESSAGE value="Created pages for hamburger menu.&#10;Updated styling." />
     <MESSAGE value="Added additional pages, played with login and firebase data, working on myGames.php with HTTP GET for UID" />
@@ -711,7 +684,8 @@
     <MESSAGE value="Added all of the features to add info." />
     <MESSAGE value="Update script.js" />
     <MESSAGE value="Fixed not found jpg" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed not found jpg" />
+    <MESSAGE value="Finilized alot of things.&#10;Added sessions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finilized alot of things.&#10;Added sessions." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/firebaseInit.js" />
@@ -893,6 +867,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
