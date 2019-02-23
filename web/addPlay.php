@@ -16,7 +16,8 @@
                     $game_id = $row[game_id];
                 };
 
-                $db->query('INSERT INTO plays (game_id, firebase_uid, players_text, winner_text, score_text, notes_text, date_played) VALUES (\'' . $game_id .'\', \'' . $_SESSION['uid'] . '\', \'' . $_POST['players'] . '\', \'' . $_POST['winner'] . '\', \'' . $_POST['score'] . '\', \'' . $_POST['notes'] . '\', \'' . $_POST['date'] . '\')');
+                $PDO = $db->prepare('INSERT INTO plays (game_id, firebase_uid, players_text, winner_text, score_text, notes_text, date_played) VALUES (\'' . $game_id .'\', \'' . $_SESSION['uid'] . '\', \'' . $_POST['players'] . '\', \'' . $_POST['winner'] . '\', \'' . $_POST['score'] . '\', \'' . $_POST['notes'] . '\', \'' . $_POST['date'] . '\')');
+                $PDO->execute();
             }
         ?>
 //

@@ -11,14 +11,16 @@
         if (isset($_POST['submit'])) {
             echo "showNotice();";
 
-            $db->query('INSERT INTO game (game_name) SELECT \'' . $_POST[game] . '\' WHERE NOT EXISTS (SELECT * FROM game WHERE game_name =\'' . $_POST[game] . '\')');
+            $PDO = $db->prepare('INSERT INTO game (game_name) SELECT \'' . $_POST[game] . '\' WHERE NOT EXISTS (SELECT * FROM game WHERE game_name =\'' . $_POST[game] . '\')');
+            $PDO->execute();
 
             $game_id;
             foreach ($db->query('SELECT * FROM game WHERE game_name = \'' . $_POST[game] . '\'') as $row) {
                 $game_id = $row[game_id];
             };
 
-            $db->query('INSERT INTO games_owned (game_id, firebase_uid) VALUES (\'' . $game_id .'\', \'' . $_SESSION['uid'] . '\')');
+            $PDO= $db->prepare('INSERT INTO games_owned (game_id, firebase_uid) VALUES (\'' . $game_id .'\', \'' . $_SESSION['uid'] . '\')');
+            $PDO->execute();
 
         }
         ?>
